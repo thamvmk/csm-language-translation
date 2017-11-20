@@ -18,8 +18,9 @@ lastupdate_end = datetime.date(2016, 12, 7)
 cursor.execute(query, (lastupdate_start, lastupdate_end))
 
 for ( url, content, lastupdated) in cursor:
-  print("{}, {} was updated on {:%d %b %Y}".format(
-     url, content, lastupdated))
+    print ("URL        : %s" % url)
+    print ("content    : %s" % content)
+    print ("lastupdated: %s\n" % lastupdated)
 
 cursor.close()
 connection.close()
