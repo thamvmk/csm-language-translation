@@ -7,9 +7,9 @@ def trans( content,  lang ):
     translator = Translator()
     out_lang = ""
     "This prints a passed info into this function"
-    #print ("Content  : ", content)
-    #print ("Lang     : ", lang)
+    print ("Content  : ", content)
+    print ("Lang     : ", lang)
     out_lang = translator.translate(content, lang) 
     #print ("Out_lang : ", out_lang.text)
+    #input("Press Enter to continue...")
     return out_lang.text;
-
